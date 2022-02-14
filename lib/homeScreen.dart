@@ -31,22 +31,8 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween, 
                 children: [
-                  isDrawerOpen?IconButton(
-                   icon: Icon(Icons.arrow_back_ios),
-                   onPressed: (){
-                     setState(() {
-                       xOffset=0;
-                       yOffset=0;
-                       scaleFactor=1;
-                       isDrawerOpen=false;
-
-                     });
-                   },
-
-                 ): 
                   IconButton(
-                    icon: Icon(Icons.menu),
-                    onPressed: (){
+                    icon: Icon(Icons.menu), onPressed: (){
 
                       setState(() {
                         var xOffset = 230;
